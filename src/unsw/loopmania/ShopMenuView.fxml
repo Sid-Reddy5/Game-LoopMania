@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+
+<!-- TODO = modify and expand the range of menus available from the menu menu, and develop game modes you can select when starting a new game -->
+
+<!-- vertically stacked label and button -->
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Shop" />
+      <!-- clicking button should start/resume the game -->
+      <Button fx:id="startGameButton" text="Back to game" onAction="#switchToGame"/>
+
+      <Label text=" " />
+
+      <HBox>
+
+         <Button fx:id="startGameButton" text="Buy sword: -5G" prefWidth="180" onAction="#switchToGame">
+            <graphic>
+               <ImageView id="swordCell"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+                  <image>
+                     <Image url="@../../images/basic_sword.png"/>
+                  </image>
+               </ImageView>   
+            </graphic>
+         </Button>
+
+         <Label text="  " />
+
+         <Button fx:id="startGameButton" text="Buy stake: -20G" prefWidth="180" onAction="#switchToGame">
+            <graphic>
+               <ImageView id="swordCell"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+                  <image>
+                     <Image url="@../../images/stake.png"/>
+                  </image>
+               </ImageView>   
+            </graphic>
+         </Button>
+
+      </HBox>
+
+      <HBox>
+
+         <Button fx:id="startGameButton" text="Buy Staff: -8G" prefWidth="180" onAction="#switchToGame">
+            <graphic>
+               <ImageView id="swordCell"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+                  <image>
+                     <Image url="@../../images/staff.png"/>
+                  </image>
+               </ImageView>   
+            </graphic>
+         </Button>
+
+         <Label text="  " />
+
+         <Button fx:id="startGameButton" text="Buy armour: -12G" prefWidth="180" onAction="#switchToGame">
+            <graphic>
+               <ImageView id="swordCell"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+                  <image>
+                     <Image url="@../../images/armour.png"/>
+                  </image>
+               </ImageView>   
+            </graphic>
+         </Button>
+
+      </HBox>
+
+      <HBox>
+
+         <Button fx:id="startGameButton" text="Buy shield: -15G" prefWidth="180" onAction="#switchToGame">
+            <graphic>
+               <ImageView id="swordCell"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+                  <image>
+                     <Image url="@../../images/shield.png"/>
+                  </image>
+               </ImageView>   
+            </graphic>
+         </Button>
+
+         <Label text="  " />
+
+         <Button fx:id="startGameButton" text="Buy helmet: -10G" prefWidth="180" onAction="#switchToGame">
+            <graphic>
+               <ImageView id="swordCell"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+                  <image>
+                     <Image url="@../../images/helmet.png"/>
+                  </image>
+               </ImageView>   
+            </graphic>
+         </Button>
+
+      </HBox>
+
+      <Button fx:id="startGameButton" text="Buy health potion: -18G" onAction="#switchToGame">
+         <graphic>
+            <ImageView id="swordCell"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+               <image>
+                  <Image url="@../../images/brilliant_blue_new.png"/>
+               </image>
+            </ImageView>   
+         </graphic>
+      </Button>
+
+
+
+
+
+
+      <Label text=" " />
+      
+      <HBox>
+
+         <Button fx:id="startGameButton" text="Sell sword: +4G" prefWidth="180" onAction="#switchToGame">
+            <graphic>
+               <ImageView id="swordCell"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+                  <image>
+                     <Image url="@../../images/basic_sword.png"/>
+                  </image>
+               </ImageView>   
+            </graphic>
+         </Button>
+
+         <Label text="  " />
+
+         <Button fx:id="startGameButton" text="Sell stake: +16G" prefWidth="180" onAction="#switchToGame">
+            <graphic>
+               <ImageView id="swordCell"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+                  <image>
+                     <Image url="@../../images/stake.png"/>
+                  </image>
+               </ImageView>   
+            </graphic>
+         </Button>
+
+      </HBox>
+
+      <HBox>
+
+         <Button fx:id="startGameButton" text="Sell Staff: +5G" prefWidth="180" onAction="#switchToGame">
+            <graphic>
+               <ImageView id="swordCell"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+                  <image>
+                     <Image url="@../../images/staff.png"/>
+                  </image>
+               </ImageView>   
+            </graphic>
+         </Button>
+
+         <Label text="  " />
+
+         <Button fx:id="startGameButton" text="Sell armour: +10G" prefWidth="180" onAction="#switchToGame">
+            <graphic>
+               <ImageView id="swordCell"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+                  <image>
+                     <Image url="@../../images/armour.png"/>
+                  </image>
+               </ImageView>   
+            </graphic>
+         </Button>
+
+      </HBox>
+
+      <HBox>
+
+         <Button fx:id="startGameButton" text="Sell shield: +10G" prefWidth="180" onAction="#switchToGame">
+            <graphic>
+               <ImageView id="swordCell"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+                  <image>
+                     <Image url="@../../images/shield.png"/>
+                  </image>
+               </ImageView>   
+            </graphic>
+         </Button>
+
+         <Label text="  " />
+
+         <Button fx:id="startGameButton" text="Sell helmet: +10G" prefWidth="180" onAction="#switchToGame">
+            <graphic>
+               <ImageView id="swordCell"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+                  <image>
+                     <Image url="@../../images/helmet.png"/>
+                  </image>
+               </ImageView>   
+            </graphic>
+         </Button>
+
+      </HBox>
+
+      <Button fx:id="startGameButton" text="Sell health potion: +10G" onAction="#switchToGame">
+         <graphic>
+            <ImageView id="swordCell"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+               <image>
+                  <Image url="@../../images/brilliant_blue_new.png"/>
+               </image>
+            </ImageView>   
+         </graphic>
+      </Button>
+
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
